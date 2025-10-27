@@ -11,7 +11,7 @@ def get_user_info():
     while True: # This Whil Loop is for name 
         user_name = input("Enter Name: ")
 
-        if not validate_input(user_name):
+        if not user_name.isalpha() or not validate_input(user_name):
             print("Invalid name! Please try again.")
             continue
         
