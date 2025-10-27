@@ -51,7 +51,8 @@ Prints the message to the console in a formatted way.
 
 ### How to Run
 
-''' Run the Python program.
+'''
+Run the Python program.
 
 The program will prompt you to enter your name and age.
 
