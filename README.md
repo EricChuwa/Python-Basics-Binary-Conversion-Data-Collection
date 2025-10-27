@@ -51,7 +51,7 @@ Prints the message to the console in a formatted way.
 
 ### How to Run
 
-'''
+```
 Run the Python program.
 
 The program will prompt you to enter your name and age.
@@ -63,7 +63,7 @@ The program will then ask you to enter a message.
 Your message will be saved to a file and read back.
 
 Finally, the program will display a greeting and thank you message.
-'''
+```
 
 ### Example Interaction
 Enter your name: Alice
