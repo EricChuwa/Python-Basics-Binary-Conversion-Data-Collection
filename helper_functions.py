@@ -8,12 +8,13 @@ def validate_input(user_input):
     
 def convert_to_binary(text):
     
-    # Variable 
+    # Binary Variable 
     binary = ""
 
     if type(text) == str:
+        # Iterating through each letter in the user input
         for char in text:
-            bin_val = bin(ord(char))[2: ]
+            bin_val = bin(ord(char))[2: ] # Converting letters to ASCII then into binary
             binary += f"{bin_val} "
 
     elif type(text) == int:

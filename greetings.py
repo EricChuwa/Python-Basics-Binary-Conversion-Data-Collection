@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 def show_intro():
     print("==============================")
     print("Welcome to the User Info Program")
