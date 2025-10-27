@@ -3,25 +3,23 @@ from helper_functions import validate_input, convert_to_binary, create_message
 from file_manager import save_message, read_message
 from greetings import show_intro, show_exit_message
 
-def get_user_info():        
-        while True:
-            ur_name = input("Please Enter your name: ")
-            if   validate_input(ur_name) == True and ur_name.isalpha():
-                  print(f"Hi {ur_name}! You have a nice name.")
-                  break
-            else:
-                print("Invalid input, Please try again")
-                continue     
-        while True: 
-            ur_age = input("Please enter your age: ")
-            if   validate_input(ur_age) == True and ur_age.isdigit():
-                  print("valid age.")
-                  break
-                  
-            else:
-                print("Invalid input, Please try again")
+def get_user_info():
+    Valid = False
+    while True: # This Whil Loop is for name 
+        user_name = input("Enter Name: ")
+
+        if not validate_input(user_name):
+            print("Invalid name! Please try again.")
+            continue
+        
+        while not Valid:  # This second While loop is for age  
+            user_age = input("Enter Age: ")
+            
+            if not user_age.isdigit():
+                print("Invalid age! Please enter a number.")
                 continue
-        return ur_name, ur_age
+            
+            return user_name, user_age
 
 
 if __name__ == "__main__":
